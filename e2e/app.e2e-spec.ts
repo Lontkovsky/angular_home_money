@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { HomeMoneyPage } from './app.po';
 
 describe('home-money App', () => {
-  let page: AppPage;
+  let page: HomeMoneyPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new HomeMoneyPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to ls!');
+    expect(page.getParagraphText()).toEqual('wfm works!');
   });
 });
