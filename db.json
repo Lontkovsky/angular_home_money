@@ -2,13 +2,13 @@
   "users": [
     {
       "id": 1,
-      "email": "lontkovsky@gmail.com",
+      "email": "wfm@mail.ru",
       "password": "12345678",
       "name": "Администратор"
     }
   ],
   "bill": {
-    "value": 99000,
+    "value": 95800,
     "currency": "RUB"
   },
   "categories": [
@@ -71,11 +71,19 @@
     },
     {
       "type": "outcome",
-      "amount": 1000,
+      "amount": 1200,
       "category": 3,
-      "date": "03.04.2018 11:15:17",
-      "description": "бензин",
+      "date": "02.07.2017 23:28:48",
+      "description": "Test",
       "id": 6
+    },
+    {
+      "type": "outcome",
+      "amount": 3000,
+      "category": 3,
+      "date": "02.07.2017 23:29:11",
+      "description": "test 2",
+      "id": 7
     }
   ]
 }
