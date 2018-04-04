@@ -8,7 +8,7 @@ import { PlanningPageComponent } from './planning-page/planning-page.component';
 import { RecordsPageComponent } from './records-page/records-page.component';
 
 const routes: Routes = [
-  {path: 'system', component: SystemComponent, children: [
+  {path: '', component: SystemComponent, children: [
     {path: 'bill', component: BillPageComponent},
     {path: 'history', component: HistoryPageComponent},
     {path: 'planning', component: PlanningPageComponent},
