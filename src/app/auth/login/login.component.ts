@@ -8,7 +8,7 @@ import { Message } from '../../shared/models/message.model';
 import { AuthService } from '../../shared/services/auth.service';
 
 @Component({
-  selector: 'wfm-login',
+  selector: 'ls-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })

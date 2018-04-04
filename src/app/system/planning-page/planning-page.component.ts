@@ -5,11 +5,11 @@ import { EventsService } from '../shared/services/events.service';
 import { Observable } from 'rxjs/Observable';
 import { Bill } from '../shared/models/bill.model';
 import { Category } from '../shared/models/category.model';
-import { WFMEvent } from '../shared/models/event.model';
+import { LSEvent } from '../shared/models/event.model';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-  selector: 'wfm-planning-page',
+  selector: 'ls-planning-page',
   templateUrl: './planning-page.component.html',
   styleUrls: ['./planning-page.component.scss']
 })
@@ -20,7 +20,7 @@ export class PlanningPageComponent implements OnInit, OnDestroy {
 
   bill: Bill;
   categories: Category[] = [];
-  events: WFMEvent[] = [];
+  events: LSEvent[] = [];
 
   constructor(private billService: BillService,
               private categoriesService: CategoriesService,
@@ -32,7 +32,7 @@ export class PlanningPageComponent implements OnInit, OnDestroy {
       this.billService.getBill(),
       this.categoriesService.getCategories(),
       this.eventsService.getEvents()
-    ).subscribe((data: [Bill, Category[], WFMEvent[]]) => {
+    ).subscribe((data: [Bill, Category[], LSEvent[]]) => {
       this.bill = data[0];
       this.categories = data[1];
       this.events = data[2];

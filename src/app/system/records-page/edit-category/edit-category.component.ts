@@ -6,7 +6,7 @@ import { Message } from '../../../shared/models/message.model';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-  selector: 'wfm-edit-category',
+  selector: 'ls-edit-category',
   templateUrl: './edit-category.component.html',
   styleUrls: ['./edit-category.component.scss']
 })
