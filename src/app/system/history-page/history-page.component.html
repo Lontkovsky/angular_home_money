@@ -11,18 +11,18 @@
 
 <div *ngIf="!isLoaded" class="text-center">Loading ...</div>
 <div *ngIf="isLoaded">
-  <wfm-history-chart [data]="chartData"></wfm-history-chart>
+  <ls-history-chart [data]="chartData"></ls-history-chart>
 
-  <wfm-history-events
+  <ls-history-events
     [categories]="categories"
     [events]="filteredEvents"
-  ></wfm-history-events>
+  ></ls-history-events>
   <div *ngIf="isFilterVisible">
-    <wfm-history-filter
+    <ls-history-filter
       (onFilterApply)="onFilterApply($event)"
       (onFilterCancel)="onFilterCancel()"
       [categories]="categories"
-    ></wfm-history-filter>
+    ></ls-history-filter>
   </div>
 </div>
 

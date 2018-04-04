@@ -6,7 +6,7 @@ import { BillService } from '../shared/services/bill.service';
 import { Bill } from '../shared/models/bill.model';
 
 @Component({
-  selector: 'wfm-bill-page',
+  selector: 'ls-bill-page',
   templateUrl: './bill-page.component.html',
   styleUrls: ['./bill-page.component.scss']
 })

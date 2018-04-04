@@ -6,10 +6,10 @@ import * as moment from 'moment';
 
 import { EventsService } from '../shared/services/events.service';
 import { Category } from '../shared/models/category.model';
-import { WFMEvent } from '../shared/models/event.model';
+import { LSEvent } from '../shared/models/event.model';
 
 @Component({
-  selector: 'wfm-history-page',
+  selector: 'ls-history-page',
   templateUrl: './history-page.component.html',
   styleUrls: ['./history-page.component.scss']
 })
@@ -23,8 +23,8 @@ export class HistoryPageComponent implements OnInit, OnDestroy {
   s1: Subscription;
 
   categories: Category[] = [];
-  events: WFMEvent[] = [];
-  filteredEvents: WFMEvent[] = [];
+  events: LSEvent[] = [];
+  filteredEvents: LSEvent[] = [];
 
   chartData = [];
 
@@ -34,7 +34,7 @@ export class HistoryPageComponent implements OnInit, OnDestroy {
     this.s1 = Observable.combineLatest(
       this.categoriesService.getCategories(),
       this.eventService.getEvents()
-    ).subscribe((data: [Category[], WFMEvent[]]) => {
+    ).subscribe((data: [Category[], LSEvent[]]) => {
       this.categories = data[0];
       this.events = data[1];
 

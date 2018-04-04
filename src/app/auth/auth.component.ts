@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'wfm-auth',
+  selector: 'ls-auth',
   templateUrl: './auth.component.html'
 })
 export class AuthComponent implements OnInit {

@@ -6,7 +6,7 @@ import { UsersService } from '../../shared/services/users.service';
 import { User } from '../../shared/models/user.model';
 
 @Component({
-  selector: 'wfm-registration',
+  selector: 'ls-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.scss']
 })

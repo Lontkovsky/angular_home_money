@@ -6,6 +6,6 @@ export class HomeMoneyPage {
   }
 
   getParagraphText() {
-    return element(by.css('wfm-root h1')).getText();
+    return element(by.css('ls-root h1')).getText();
   }
 }
