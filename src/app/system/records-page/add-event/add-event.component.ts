@@ -3,7 +3,7 @@ import { NgForm } from '@angular/forms';
 import * as moment from 'moment';
 
 import { Category } from '../../shared/models/category.model';
-import { WFMEvent } from '../../shared/models/event.model';
+import { LSEvent } from '../../shared/models/event.model';
 import { EventsService } from '../../shared/services/events.service';
 import { BillService } from '../../shared/services/bill.service';
 import { Bill } from '../../shared/models/bill.model';
@@ -11,7 +11,7 @@ import { Message } from '../../../shared/models/message.model';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-  selector: 'wfm-add-event',
+  selector: 'ls-add-event',
   templateUrl: './add-event.component.html',
   styleUrls: ['./add-event.component.scss']
 })
@@ -45,7 +45,7 @@ export class AddEventComponent implements OnInit, OnDestroy {
     let {amount, description, category, type} = form.value;
     if (amount < 0) amount *= -1;
 
-    const event = new WFMEvent(
+    const event = new LSEvent(
       type, amount, +category,
       moment().format('DD.MM.YYYY HH:mm:ss'), description
     );

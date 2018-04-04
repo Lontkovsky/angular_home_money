@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import * as moment from 'moment';
 
 @Pipe({
-  name: 'wfmMoment'
+  name: 'lsMoment'
 })
 export class MomentPipe implements PipeTransform {
 
