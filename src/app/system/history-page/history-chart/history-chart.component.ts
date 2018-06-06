@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'ls-history-chart',
+  selector: 'wfm-history-chart',
   templateUrl: './history-chart.component.html',
   styleUrls: ['./history-chart.component.scss']
 })

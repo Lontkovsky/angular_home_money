@@ -1,4 +1,4 @@
-export class LSEvent {
+export class WFMEvent {
   constructor(
     public type: string,
     public amount: number,

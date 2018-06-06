@@ -2,18 +2,18 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { EventsService } from '../../shared/services/events.service';
 import { CategoriesService } from '../../shared/services/categories.service';
-import { LSEvent } from '../../shared/models/event.model';
+import { WFMEvent } from '../../shared/models/event.model';
 import { Category } from '../../shared/models/category.model';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-  selector: 'ls-history-detail',
+  selector: 'wfm-history-detail',
   templateUrl: './history-detail.component.html',
   styleUrls: ['./history-detail.component.scss']
 })
 export class HistoryDetailComponent implements OnInit, OnDestroy {
 
-  event: LSEvent;
+  event: WFMEvent;
   category: Category;
 
   isLoaded = false;
@@ -27,7 +27,7 @@ export class HistoryDetailComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.s1 = this.route.params
       .mergeMap((params: Params) => this.eventsService.getEventById(params['id']))
-      .mergeMap((event: LSEvent) => {
+      .mergeMap((event: WFMEvent) => {
         this.event = event;
         return this.categoriesService.getCategoryById(event.category);
       })

@@ -1,15 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { LSEvent } from '../../shared/models/event.model';
+import { WFMEvent } from '../../shared/models/event.model';
 import { Category } from '../../shared/models/category.model';
 
 @Component({
-  selector: 'ls-history-events',
+  selector: 'wfm-history-events',
   templateUrl: './history-events.component.html',
   styleUrls: ['./history-events.component.scss']
 })
 export class HistoryEventsComponent implements OnInit {
   @Input() categories: Category[] = [];
-  @Input() events: LSEvent[] = [];
+  @Input() events: WFMEvent[] = [];
   searchValue = '';
   searchPlaceholder = 'Сумма';
   searchField = 'amount';
@@ -22,7 +22,7 @@ export class HistoryEventsComponent implements OnInit {
     });
   }
 
-  getEventClass(e: LSEvent) {
+  getEventClass(e: WFMEvent) {
     return {
       'label': true,
       'label-danger': e.type === 'outcome',
