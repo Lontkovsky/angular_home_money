@@ -10,10 +10,10 @@
 </div>
 <section class="section">
   <div class="row text-center" *ngIf="!isLoaded">
-    Loading ...
+    <wfm-loader></wfm-loader>
   </div>
   <div class="row" *ngIf="isLoaded">
-    <ls-bill-card [bill]="bill" [currency]="currency"></ls-bill-card>
-    <ls-currency-card [currency]="currency"></ls-currency-card>
+    <wfm-bill-card [bill]="bill" [currency]="currency"></wfm-bill-card>
+    <wfm-currency-card [currency]="currency"></wfm-currency-card>
   </div>
 </section>

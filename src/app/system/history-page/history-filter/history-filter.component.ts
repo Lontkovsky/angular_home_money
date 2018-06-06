@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Category } from '../../shared/models/category.model';
 
 @Component({
-  selector: 'ls-history-filter',
+  selector: 'wfm-history-filter',
   templateUrl: './history-filter.component.html',
   styleUrls: ['./history-filter.component.scss']
 })

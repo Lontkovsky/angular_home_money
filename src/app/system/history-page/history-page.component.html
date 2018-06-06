@@ -9,20 +9,20 @@
   </div>
 </div>
 
-<div *ngIf="!isLoaded" class="text-center">Loading ...</div>
+<div *ngIf="!isLoaded" class="text-center"><wfm-loader></wfm-loader></div>
 <div *ngIf="isLoaded">
-  <ls-history-chart [data]="chartData"></ls-history-chart>
+  <wfm-history-chart [data]="chartData"></wfm-history-chart>
 
-  <ls-history-events
+  <wfm-history-events
     [categories]="categories"
     [events]="filteredEvents"
-  ></ls-history-events>
+  ></wfm-history-events>
   <div *ngIf="isFilterVisible">
-    <ls-history-filter
+    <wfm-history-filter
       (onFilterApply)="onFilterApply($event)"
       (onFilterCancel)="onFilterCancel()"
       [categories]="categories"
-    ></ls-history-filter>
+    ></wfm-history-filter>
   </div>
 </div>
 

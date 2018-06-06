@@ -9,6 +9,6 @@ describe('home-money App', () => {
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('ls works!');
+    expect(page.getParagraphText()).toEqual('wfm works!');
   });
 });

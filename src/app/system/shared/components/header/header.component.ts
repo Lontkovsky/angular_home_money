@@ -5,7 +5,7 @@ import { User } from '../../../../shared/models/user.model';
 import { AuthService } from '../../../../shared/services/auth.service';
 
 @Component({
-  selector: 'ls-header',
+  selector: 'wfm-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

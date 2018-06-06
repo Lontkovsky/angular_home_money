@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'ls-currency-card',
+  selector: 'wfm-currency-card',
   templateUrl: './currency-card.component.html',
   styleUrls: ['./currency-card.component.scss']
 })

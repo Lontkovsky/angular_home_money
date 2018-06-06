@@ -6,7 +6,7 @@ import { CategoriesService } from '../../shared/services/categories.service';
 import { Category } from '../../shared/models/category.model';
 
 @Component({
-  selector: 'ls-add-category',
+  selector: 'wfm-add-category',
   templateUrl: './add-category.component.html',
   styleUrls: ['./add-category.component.scss']
 })
