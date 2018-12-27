@@ -21,7 +21,7 @@ import { NotFoundComponent } from './shared/components/not-found/not-found.compo
     BrowserModule,
     HttpModule,
     AuthModule,
-    AppRoutingModule
+    AppRoutingModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
